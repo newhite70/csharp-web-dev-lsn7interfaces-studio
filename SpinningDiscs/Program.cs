@@ -14,15 +14,15 @@ namespace SpinningDiscs
 
             testCD.DiskSpin();
             testCD.WriteDisk("WE are we are");
-            testCD.ReadDisc();
+            //testCD.ReadDisc();
             testCD.LaserSwitch(true);
-            testCD.ReadDisc();
+            //testCD.ReadDisc();
 
             testDVD.DiskSpin();
             testDVD.WriteDisk("WE are we are DVDS");
-            testDVD.ReadDisc();
+            //testDVD.ReadDisc();
             testDVD.LaserSwitch(true);
-            testDVD.ReadDisc();
+            //testDVD.ReadDisc();
         }
     }
 }

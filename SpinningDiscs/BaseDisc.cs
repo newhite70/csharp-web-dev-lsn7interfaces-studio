@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SpinningDiscs
 {
-    public abstract class BaseDisc : IOpticalDisc
+    public class BaseDisc 
     {
         public string Contents { get; set; }
         public int DiscSpeed { get; set; }
@@ -36,14 +36,17 @@ namespace SpinningDiscs
                 Console.WriteLine("Laser is off, can't read media");
             }
         }
+
         public void DiskSpin()
         {
             Console.WriteLine($"{DiscType} spins at {DiscSpeed}rpms");
         }
+        
         public void WriteDisk(string contents)
         {
             Contents = contents;
         }
+        
 
     }
 }

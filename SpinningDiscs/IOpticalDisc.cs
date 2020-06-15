@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SpinningDiscs
 {
-    interface IOpticalDisc
+    public interface IOpticalDisc
 
     {
         public string Contents { get; set; }
@@ -20,12 +20,12 @@ namespace SpinningDiscs
         }
         public void WriteDisk(string contents)
         {
-            Contents = contents;
+            //Contents = contents;
         }
         //should report info back like name capacity contents and disktype
         public void ReadDisc()
         {
-            
+            //return a string
         }
     }
 }
